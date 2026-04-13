@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free AI Readiness Audit | Local Business AI Services</title>
+    <meta name="description" content="Discover how AI can transform your local business. Take our free 2-minute audit and get a personalized AI roadmap.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #f8f9fa; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        
+        header { text-align: center; padding: 60px 20px; background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); color: white; }
+        header h1 { font-size: 2.5rem; margin-bottom: 15px; }
+        header p { font-size: 1.2rem; opacity: 0.9; }
+        .tagline { background: #4CAF50; display: inline-block; padding: 8px 20px; border-radius: 25px; font-size: 0.9rem; margin-bottom: 20px; font-weight: 600; }
+        
+        .hero { background: white; padding: 40px; border-radius: 12px; margin: -30px 20px 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); text-align: center; }
+        .hero h2 { font-size: 1.8rem; margin-bottom: 20px; }
+        .hero p { color: #666; margin-bottom: 30px; }
+        
+        .audit-form { text-align: left; max-width: 600px; margin: 0 auto; }
+        .question { background: #f8f9fa; padding: 25px; border-radius: 10px; margin-bottom: 20px; border-left: 4px solid #4CAF50; }
+        .question label { display: block; font-weight: 600; margin-bottom: 12px; font-size: 1.1rem; }
+        .question select { width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 8px; font-size: 1rem; }
+        .question select:focus { outline: none; border-color: #4CAF50; }
+        
+        .btn { display: inline-block; background: #4CAF50; color: white; padding: 16px 40px; border-radius: 8px; font-size: 1.1rem; font-weight: 600; border: none; cursor: pointer; transition: all 0.2s; }
+        .btn:hover { background: #45a049; transform: translateY(-2px); }
+        
+        .services { padding: 40px 20px; }
+        .services h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+        .service-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .service-card h3 { margin-bottom: 15px; color: #1a1a1a; }
+        .service-card .price { font-size: 1.5rem; font-weight: 700; color: #4CAF50; margin-bottom: 15px; }
+        .service-card .price span { font-size: 0.9rem; color: #666; font-weight: 400; }
+        .service-card ul { list-style: none; padding: 0; }
+        .service-card li { padding: 8px 0; border-bottom: 1px solid #eee; }
+        .service-card li:last-child { border-bottom: none; }
+        .service-card li:before { content: "✓ "; color: #4CAF50; font-weight: 600; }
+        
+        .guarantee { background: #e8f5e9; padding: 30px; border-radius: 12px; text-align: center; margin: 40px 20px; }
+        .guarantee h3 { color: #2e7d32; margin-bottom: 10px; }
+        
+        footer { text-align: center; padding: 40px 20px; color: #666; font-size: 0.9rem; background: #1a1a1a; color: #999; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <span class="tagline">🚀 Free AI Audit for Local Businesses</span>
+            <h1>Is Your Business Ready for AI?</h1>
+            <p>Take our 2-minute assessment. Get a personalized AI roadmap delivered to your inbox.</p>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h2>Stop Wasting Time on Manual Tasks</h2>
+        <p>52% of local business owners say lead generation is their #1 challenge. 70% of leads go cold due to slow follow-up. AI can fix both — but most don't know where to start.</p>
+        
+        <div class="audit-form">
+            <form id="auditForm">
+                <div class="question">
+                    <label>1. How many hours per week do you spend on administrative tasks?</label>
+                    <select name="admin_hours" required>
+                        <option value="">Select...</option>
+                        <option value="0-5">0-5 hours</option>
+                        <option value="5-10">5-10 hours</option>
+                        <option value="10-20">10-20 hours</option>
+                        <option value="20+">20+ hours</option>
+                    </select>
+                </div>
+                
+                <div class="question">
+                    <label>2. Do you have a system that captures leads on your website 24/7?</label>
+                    <select name="lead_capture" required>
+                        <option value="">Select...</option>
+                        <option value="no">No, we don't have one</option>
+                        <option value="basic">Basic contact form</option>
+                        <option value="yes">Yes, but it needs improvement</option>
+                        <option value="excellent">Yes, it works great</option>
+                    </select>
+                </div>
+                
+                <div class="question">
+                    <label>3. How quickly do you follow up with new leads?</label>
+                    <select name="follow_up" required>
+                        <option value="">Select...</option>
+                        <option value="slow">Often forget / take days</option>
+                        <option value="same_day">Within the same day</option>
+                        <option value="within_hour">Within a few hours</option>
+                        <option value="immediate">Immediately / instant</option>
+                    </select>
+                </div>
+                
+                <div class="question">
+                    <label>4. What type of business are you?</label>
+                    <select name="business_type" required>
+                        <option value="">Select...</option>
+                        <option value="plumber">Plumber / HVAC</option>
+                        <option value="electrician">Electrician</option>
+                        <option value="salon">Salon / Spa</option>
+                        <option value="dentist">Dentist / Medical</option>
+                        <option value="restaurant">Restaurant</option>
+                        <option value="retail">Retail Store</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="question">
+                    <label>5. Your email (for your free AI roadmap)</label>
+                    <select name="email" required>
+                        <option value="">Enter your email...</option>
+                    </select>
+                    <input type="email" name="email" placeholder="you@yourbusiness.com" required style="width:100%;padding:12px;border:2px solid #ddd;border-radius:8px;font-size:1rem;margin-top:10px;">
+                </div>
+                
+                <button type="submit" class="btn" style="width:100%;">Get My Free AI Roadmap →</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="services">
+        <h2>Our AI Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>🤖 Lead Gen Automation</h3>
+                <div class="price">$297<span> setup</span> + $97/mo</div>
+                <ul>
+                    <li>AI chatbot for your website</li>
+                    <li>Missed call → text back</li>
+                    <li>Auto follow-up sequences</li>
+                    <li>Calendar booking integration</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <h3>🌐 Website Redesign</h3>
+                <div class="price">$497<span> one-time</span></div>
+                <ul>
+                    <li>Modern, mobile-optimized</li>
+                    <li>Fast loading speed</li>
+                    <li>SEO basics included</li>
+                    <li>Contact forms + booking</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <h3>📱 AI Social Media</h3>
+                <div class="price">$197<span>/month</span></div>
+                <ul>
+                    <li>8-12 posts per month</li>
+                    <li>AI-generated content</li>
+                    <li>Auto-posting scheduler</li>
+                    <li>Engagement responses</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <h3>📞 Smart Scheduling</h3>
+                <div class="price">$147<span>/month</span></div>
+                <ul>
+                    <li>AI voice receptionist</li>
+                    <li>Appointment booking</li>
+                    <li>SMS reminders</li>
+                    <li>Missed call handling</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <h3>✉️ Follow-Up Systems</h3>
+                <div class="price">$97<span>/month</span></div>
+                <ul>
+                    <li>Auto email responses</li>
+                    <li>Review requests</li>
+                    <li>Re-engagement sequences</li>
+                    <li>Template library</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <h3>📢 AI Paid Ads</h3>
+                <div class="price">$397<span> setup</span> + $197/mo</div>
+                <ul>
+                    <li>AI-generated creatives</li>
+                    <li>A/B testing automation</li>
+                    <li>Campaign optimization</li>
+                    <li>Multi-platform (FB, Google)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="guarantee">
+        <h3>🔒 100% Satisfaction Guarantee</h3>
+        <p>If you're not happy with our audit recommendations, we refund immediately. No questions asked.</p>
+    </div>
+
+    <footer>
+        <p>© 2026 AI Services for Local Businesses</p>
+    </footer>
+
+    <script>
+        document.getElementById('auditForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Store for follow-up (in production, send to email/API)
+            console.log('Audit submitted:', data);
+            
+            alert('Thanks! Your AI Roadmap is being prepared. We\'ll email it to you shortly.');
+        });
+    </script>
+</body>
+</html>
